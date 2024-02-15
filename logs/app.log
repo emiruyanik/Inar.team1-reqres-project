@@ -1,0 +1,123 @@
+15-02-2024 12:19:13.501 [main] ERROR utils.ConfigManager - Could not load application properties.
+java.lang.NullPointerException: inStream parameter is null
+	at java.util.Objects.requireNonNull(Objects.java:233) ~[?:?]
+	at java.util.Properties.load(Properties.java:407) ~[?:?]
+	at utils.ConfigManager.<clinit>(ConfigManager.java:18) ~[classes/:?]
+	at stepdefs.BaseStep.<init>(BaseStep.java:13) ~[test-classes/:?]
+	at stepdefs.ListUserStepDefs.<init>(ListUserStepDefs.java:15) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123) ~[?:?]
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.SliceOps$1$1.accept(SliceOps.java:200) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.cli.Main.run(Main.java:87) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.cli.Main.main(Main.java:30) [cucumber-core-7.15.0.jar:7.15.0]
+15-02-2024 12:24:28.532 [main] ERROR utils.ConfigManager - Could not load application properties.
+java.lang.NullPointerException: inStream parameter is null
+	at java.util.Objects.requireNonNull(Objects.java:233) ~[?:?]
+	at java.util.Properties.load(Properties.java:407) ~[?:?]
+	at utils.ConfigManager.<clinit>(ConfigManager.java:18) ~[classes/:?]
+	at stepdefs.BaseStep.<init>(BaseStep.java:13) ~[test-classes/:?]
+	at stepdefs.ListUserStepDefs.<init>(ListUserStepDefs.java:15) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123) ~[?:?]
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.SliceOps$1$1.accept(SliceOps.java:200) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148) ~[cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.cli.Main.run(Main.java:87) [cucumber-core-7.15.0.jar:7.15.0]
+	at io.cucumber.core.cli.Main.main(Main.java:30) [cucumber-core-7.15.0.jar:7.15.0]
+15-02-2024 12:28:07.113 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 12:45:55.984 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 13:55:01.222 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 13:58:49.080 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 14:00:31.773 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 14:09:18.980 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 14:15:12.031 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 14:16:35.749 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 14:17:22.287 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 14:26:48.199 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 14:27:10.875 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 14:28:49.933 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 14:30:23.494 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 14:31:14.819 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 14:32:08.196 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 15:39:19.097 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 15:43:55.717 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 15:53:30.340 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
+15-02-2024 16:37:19.946 [main] INFO  utils.ConfigManager - Application properties loaded successfully.
